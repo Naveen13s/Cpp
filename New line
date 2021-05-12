@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	cout<<"Hello Coder\n";
+	cout <<"Of Github";
+	return 0;
+
+}
+
+
+//Another way to insert a new line, is with the endl manipulator:
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    cout<<"Hello Naveen" << endl;
+    cout<<"i am Don";
+    return 0;
+    
+}

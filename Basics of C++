@@ -1,1 +1,84 @@
-//Complete the function printNumber which takes an integer input from the user and prints it on the screen.
+// 1. Complete the function printNumber which takes an integer input from the user and prints it on the screen.
+
+#include <iostream>
+using namespace std;
+class Solution {
+public:
+    void printNumber() {
+        int number;
+    
+        cin >> number;
+        cout << number;
+    }    
+};
+
+
+// 2.If Else Adult Teen Problem
+//Given an integer age, print on the screen:
+//Adult if age >= 18
+//Teen if age < 18
+//Do not change the case of any letter in "Adult" and "Teen" while printing the answer.Input: age = 19
+
+//Output: Adult
+//Explanation: age is greater than or equal to 18.
+//Input: age = 7
+//Output: Teen
+//Explanation: age is less than 18.
+
+
+#include <iostream>
+using namespace std;
+
+class Solution {
+public:
+    void isAdult(int age) {
+        
+        if (age >= 18) {
+            cout << "Adult";
+        } 
+        
+        else {
+            cout << "Teen";
+        }
+    }
+};
+
+
+//3. If ElseIf
+//Given marks of a student, print on the screen:
+
+//Grade A if marks >= 90
+//Grade B if marks >= 70
+//Grade C if marks >= 50
+//Grade D if marks >= 35
+//Fail, otherwise.
+
+
+//Input: marks = 95
+//Output: Grade A
+//Explanation: marks are greater than or equal to 90.
+
+//Input: marks = 14
+//Output: Fail
+//Explanation: marks are less than 35.
+
+#include <bits/stdc++.h>
+using namespace std;
+
+class Solution {
+public:
+    void studentGrade(int marks) {
+        
+        if (marks >= 90) {
+            cout << "Grade A";
+        } else if (marks >= 70) {
+            cout << "Grade B";
+        } else if (marks >= 50) {
+            cout << "Grade C";
+        } else if (marks >= 35) {
+            cout << "Grade D";
+        } else {
+            cout << "Fail";
+        }
+    }
+};
